@@ -16,6 +16,8 @@ publishing {
         mavenLocal()
     }
     publications {
-        create<MavenPublication>("local")
+        create<MavenPublication>("maven") {
+            from(components["java"])
+        }
     }
 }
