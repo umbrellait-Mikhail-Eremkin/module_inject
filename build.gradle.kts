@@ -15,4 +15,7 @@ publishing {
     repositories {
         mavenLocal()
     }
+    publications {
+        create<MavenPublication>("local")
+    }
 }
